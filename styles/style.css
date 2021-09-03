@@ -234,3 +234,137 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* =========================================
+HEADER
+============================================ */
+html {
+  font-size: 125%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, p, ul, li, a, button, i {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.homeHeader {
+  background: url(./../assets/home-image-1.jpg) center;
+}
+
+.blogHeader {
+  background: url(./../assets/blog-header-1.jpg) center;
+}
+
+.contactHeader {
+  background: url(./../assets/contact-header-1.jpg) center;
+}
+
+.homeHeader,
+.blogHeader,
+.contactHeader {
+  background-size: cover;
+  padding-bottom: 3%;
+}
+
+.homeHeader {
+  padding-bottom: 8%;
+}
+
+header, nav a {
+  color: #F0EFED;
+}
+
+nav .wrapper,
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav {
+  padding: 20px 0 10px 0;
+}
+
+.blogContactNavigation {
+  background-color: black;
+  margin-bottom: 20%;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+nav ul {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+nav li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.heroTextHome {
+  background: url(./../assets/header-box.jpg) center;
+  background-repeat: no-repeat;
+  width: 50%;
+  float: right;
+  margin: 10% -5.5% -18% 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.heroTextHome h1 {
+  font-size: 8.3rem;
+  font-weight: 400;
+  padding: 10% 0 30% 0;
+  margin-left: -80%;
+  line-height: 130px;
+}
+
+span {
+  color: #F8E71C;
+}
+
+span.makeBlock {
+  display: block;
+}
+
+/* =========================================
+HOME BODY
+============================================ */
+.aboutPlanted {
+  background-color: #F0EFED;
+  padding: 15% 0;
+  text-align: center;
+}
+
+.aboutPlanted h2 {
+  font-size: 2.82rem;
+}
+
+.aboutPlanted p {
+  margin: 2% 0 3% 0;
+}
+
+main p {
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+}
