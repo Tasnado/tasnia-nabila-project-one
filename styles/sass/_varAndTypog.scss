@@ -1,0 +1,105 @@
+/* =========================================
+VARIABLES
+============================================ */
+
+$baseFont: 'Josefin Sans', sans-serif;
+$fontSecondary: 'Roboto', sans-serif;
+$buttonBackgroundColor: #0E902D;
+$primaryColor: #F0EFED;
+$secondaryColor: #F8E71C;
+$lineHeightCommon: 32px;
+
+// Mixin
+@mixin fontLetterSpacing($sizeValue) {
+    font-size: $sizeValue;
+    letter-spacing: 1px;
+}
+
+@mixin fontlineHeight($sizeValue) {
+    font-size: $sizeValue;
+    line-height: $lineHeightCommon;
+}
+
+@mixin buttonStyle($sizeValue) {
+    background-color: $buttonBackgroundColor;
+    color: white;
+    display: inline-block;
+    padding: 15px $sizeValue 10px $sizeValue;
+    margin-top: 5px;
+}
+
+html {
+    font-size: 125%;
+    font-family: $baseFont;
+    font-weight: 700;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, p, ul, li, a, button, i {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 92px;
+}
+
+.heroTextHome h1 {
+    font-size: 8.3rem;
+}
+
+.aboutPlanted h2 {
+    font-size: 2.82rem;
+    letter-spacing: 1.3px;
+}
+
+.MissionCommentContainer h2 {
+    font-size: 2.15rem;
+    letter-spacing: 1.3px;
+}
+
+h3 {
+    @include fontLetterSpacing(2.1rem);
+}
+
+h4 {
+    @include fontLetterSpacing(1.6rem);
+}
+
+h5,
+main p,
+.buttonLink {
+    @include fontlineHeight(1rem);
+}
+
+main p {
+    font-family: $fontSecondary;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.buttonLink {
+    letter-spacing: 1px;
+    @include buttonStyle(30px);
+}
+
+// button[type="submit"] {
+//     @include buttonStyle(100%);
+// }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}

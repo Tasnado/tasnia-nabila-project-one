@@ -1,18 +1,123 @@
 /* =========================================
 HOME BODY
 ============================================ */
+main p {
+    margin: 3% 0 5% 0;
+}
+
+section {
+    background-color: $primaryColor;
+}
 
 .aboutPlanted {
-    background-color: #F0EFED;
-    padding: 15% 0;
+    padding: 12% 0;
     text-align: center;
 }
 
-.aboutPlanted h2 {
-    font-size: 2.82rem;
+.blogReads,
+.gallery {
+    background-color: white;
 }
 
-.aboutPlanted p {
-    margin: 2% 0 3% 0;
+.blogReads .wrapper{
+    display: flex;
+    position: relative;
 }
 
+.blog p {
+    margin: 5% 0 6% 0;
+}
+
+.blogReads .wrapper .blog:first-child {
+    text-align: right;
+    margin-right: 13%;
+    padding-bottom: 5%;
+}
+
+.blog:first-child .imageContainer {
+    margin-top: -8%;
+    margin-left: -16%;
+    margin-bottom: 15%;
+}
+
+.blogReads img {
+    box-shadow: 23px 21px 0 -5px $secondaryColor;
+}
+
+.blogReads .wrapper .blog:last-child {
+    text-align: left;
+    padding-top: 10%;
+}
+
+.blog:last-child .imageContainer {
+    margin-bottom: -8%;
+    margin-right: -16%;
+    margin-top: 15%;
+}
+
+.blog:last-child img {
+    box-shadow: -23px 21px 0 -5px $secondaryColor;
+}
+
+
+// INFORMATION
+.information .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+
+.infoContainer {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.iconContainer i {
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+i.fa-file {
+    padding: 10px 15px;
+}
+
+.iconContainer {
+    margin-top: -1%;
+}
+
+// PLANTED FOUNDER
+.plantedFounder .wrapper {
+    display: flex;
+    padding: 8% 0;
+}
+
+.plantedFounder .textContent {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.plantedFounder .imageContainer {
+    width: 30%;
+    height: 30%;
+}
+
+.plantedFounder .imageContainer img {
+    box-shadow: 23px 21px 0 -5px $secondaryColor;
+}
+
+
+// GALLERY
+.gallery .wrapper {
+    padding: 8% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery .imageContainer {
+    width: calc(100% / 3 - 3%);
+
+}

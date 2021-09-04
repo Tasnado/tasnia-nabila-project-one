@@ -2,23 +2,6 @@
 HEADER
 ============================================ */
 
-html {
-    font-size: 125%;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-}
-
-h1, h2, h3, h4, p, ul, li, a, button, i {
-    margin: 0;
-    padding: 0;
-}
-
-.wrapper {
-    max-width: 1080px;
-    width: 90%;
-    margin: 0 auto;
-}
-
 .homeHeader {
     background: url(./../assets/home-image-1.jpg) center;
 }
@@ -30,6 +13,7 @@ h1, h2, h3, h4, p, ul, li, a, button, i {
 .contactHeader {
     background: url(./../assets/contact-header-1.jpg) center;
 }
+
 .homeHeader,
 .blogHeader,
 .contactHeader {
@@ -38,11 +22,11 @@ h1, h2, h3, h4, p, ul, li, a, button, i {
 }
 
 .homeHeader {
-    padding-bottom: 8%;
+    padding-bottom: 10%;
 }
 
 header, nav a {
-    color: #F0EFED;
+    color: $primaryColor;
 }
 
 nav .wrapper,
@@ -82,26 +66,31 @@ nav a {
 .heroTextHome {
     background: url(./../assets/header-box.jpg) center;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 45%;
     float: right;
-    margin: 10% -5.5% -18% 0;
-}
-
-h1 {
-    font-size: 4rem;
+    margin: 10% -7% -20% 0;
+    padding: 6% 0 15% 0;
 }
 
 .heroTextHome h1 {
-    font-size: 8.3rem;
     font-weight: 400;
-    padding: 10% 0 30% 0;
+    // padding: 15% 0 25% 0;
     margin-left: -80%;
     line-height: 130px;
 }
 span {
-    color: #F8E71C;
+    color: $secondaryColor;
 }
 
 span.makeBlock {
     display: block;
+}
+
+
+// Footer
+footer {
+    background-color: #2C2C2C;
+    color: $primaryColor;
+    text-align: center;
+    padding: 10px 0;
 }
