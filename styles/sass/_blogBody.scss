@@ -89,7 +89,7 @@ BLOG BODY
             }
 
             form {
-                @include formStyle(200px);
+                @include formStyle(200px, $baseFont);
             }
         }
     }

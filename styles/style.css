@@ -667,3 +667,76 @@ BLOG BODY
   padding-top: 30px;
   height: 200px;
 }
+
+/* =========================================
+CONTACT PAGE BODY
+============================================ */
+.contactBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10% 0;
+}
+.contactBody .contactInformation {
+  width: 27%;
+}
+.contactBody .contactInformation i {
+  color: #0E902D;
+  margin: 0 20px 10px 0;
+  font-size: 1.2rem;
+}
+.contactBody .contactInformation .textContent .contactEmailAddress {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.15rem;
+}
+.contactBody .contactInformation .textContent .address p {
+  margin: 0;
+}
+.contactBody .contactMessage {
+  width: 67%;
+}
+.contactBody .contactMessage form {
+  background-color: white;
+  -webkit-box-shadow: -23px 21px 0 -5px #F8E71C;
+          box-shadow: -23px 21px 0 -5px #F8E71C;
+  padding: 10% 6% 5% 6%;
+  margin-top: -50%;
+}
+.contactBody .contactMessage form input,
+.contactBody .contactMessage form textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #F0EFED;
+  border: 2px solid #0E902D;
+  margin-bottom: 5%;
+  padding: 0 30px 20px 30px;
+}
+.contactBody .contactMessage form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  width: 100%;
+}
+.contactBody .contactMessage form fieldset input {
+  border: none;
+  border-bottom: 2px solid #0E902D;
+  width: calc(50% - 30px);
+}
+.contactBody .contactMessage form textarea {
+  width: 100%;
+  resize: none;
+  padding-top: 30px;
+  height: 250px;
+}
+.contactBody .contactMessage form input,
+.contactBody .contactMessage form textarea {
+  background-color: white;
+}

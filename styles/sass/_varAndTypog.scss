@@ -29,10 +29,10 @@ $lineHeightCommon: 32px;
     border: none;
 }
 
-@mixin formStyle($sizeValue) {
+@mixin formStyle($sizeValue, $fontFamily) {
     input, 
     textarea {
-        font-family: $baseFont;
+        font-family: $fontFamily;
         font-weight: 300;
         background-color: $primaryColor;
         border: 2px solid $buttonBackgroundColor;
