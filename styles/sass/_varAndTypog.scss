@@ -26,6 +26,43 @@ $lineHeightCommon: 32px;
     display: inline-block;
     padding: 15px $sizeValue 10px $sizeValue;
     margin-top: 5px;
+    border: none;
+}
+
+@mixin formStyle($sizeValue) {
+    input, 
+    textarea {
+        font-family: $baseFont;
+        font-weight: 300;
+        background-color: $primaryColor;
+        border: 2px solid $buttonBackgroundColor;
+        margin-bottom: 5%; 
+        padding: 0 30px 20px 30px;
+    }
+
+    fieldset {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        width: 100%;
+
+        input {
+            border: none;
+            border-bottom: 2px solid $buttonBackgroundColor;
+            width: calc(50% - 30px);
+        }
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+        padding-top: 30px;
+        height: $sizeValue;
+    }
+}
+
+@mixin boxShadow($sizeValue) {
+    box-shadow: $sizeValue 21px 0 -5px $secondaryColor;
 }
 
 html {
@@ -38,7 +75,7 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, p, ul, li, a, button, i {
+h1, h2, h3, h4, h5, p, ul, li, a, button, i, fieldset {
     margin: 0;
     padding: 0;
 }
@@ -86,14 +123,15 @@ main p {
     margin: 0 auto;
 }
 
-.buttonLink {
+.buttonLink,
+button[type="submit"] {
     letter-spacing: 1px;
     @include buttonStyle(30px);
 }
 
-// button[type="submit"] {
-//     @include buttonStyle(100%);
-// }
+button[type="submit"] {
+    width: 100%;
+}
 
 img {
     width: 100%;

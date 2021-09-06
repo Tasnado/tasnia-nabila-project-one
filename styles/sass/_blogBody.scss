@@ -1,0 +1,99 @@
+/* =========================================
+BLOG BODY
+============================================ */
+.blogMain {
+    display: flex;
+    justify-content: space-between;
+
+    .blogSpan {
+        font-family: $baseFont;
+        font-style: italic;
+        font-weight: 700;
+        color: #074115;
+    }
+
+    .blogAboutPlanted {
+        width: 30%;
+        margin-top: 8%;
+
+        .textContent {
+            background-color: white;
+            padding: 10% 40px 10% 30px;
+        }
+
+        h4 {
+            padding: 10% 0 4% 0;
+        }
+
+        .imageContainer {
+            margin: -19% -9% 0 -65%;
+        }
+
+        ul {
+            padding-left: 10%;
+            color: #074115;
+    
+            li {
+                padding-left: 10px;
+                margin: 5px 0;
+            }
+        }
+
+        a {
+            color: black;
+            font-family: $fontSecondary;
+        }
+    }
+
+    .MissionCommentContainer {
+        width: 65%;
+
+        .blogMission .imageContainer {
+            margin: -30% -23% 0 2.6%;
+
+            img {
+                @include boxShadow(-23px);
+            }
+        }
+        .textContent {
+            border: 6px solid $secondaryColor;
+            border-right: none;
+            padding: 33px;
+            
+            .date {
+                font-style: italic;
+                color: #074115;
+            }
+        }
+
+        .blogComments {
+            padding: 5%;
+
+            h5 {
+                color: #074115;
+                font-family: $baseFont;
+            }
+
+            .profile {
+                display: flex;
+                margin: 10% 0 10% 0;
+
+                .imageContainer {
+                    margin-right: 30px;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+
+            form {
+                @include formStyle(200px);
+            }
+        }
+    }
+}
+
+
+
