@@ -131,6 +131,7 @@ button[type="submit"] {
 
 button[type="submit"] {
     width: 100%;
+    cursor: pointer;
 }
 
 img {
@@ -140,4 +141,8 @@ img {
 
 a {
     text-decoration: none;
+}
+
+.burger {
+    display: none;
 }

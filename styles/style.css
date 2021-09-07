@@ -312,6 +312,7 @@ button[type=submit] {
 
 button[type=submit] {
   width: 100%;
+  cursor: pointer;
 }
 
 img {
@@ -321,6 +322,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.burger {
+  display: none;
 }
 
 /* =========================================
@@ -445,7 +450,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 .blog p {
@@ -572,29 +576,29 @@ BLOG BODY
   font-weight: 700;
   color: #074115;
 }
-.blogMain .blogAboutPlanted {
+.blogMain aside {
   width: 30%;
   margin-top: 8%;
 }
-.blogMain .blogAboutPlanted .textContent {
+.blogMain aside .textContent {
   background-color: white;
   padding: 10% 40px 10% 30px;
 }
-.blogMain .blogAboutPlanted h4 {
+.blogMain aside h4 {
   padding: 10% 0 4% 0;
 }
-.blogMain .blogAboutPlanted .imageContainer {
+.blogMain aside .imageContainer {
   margin: -19% -9% 0 -65%;
 }
-.blogMain .blogAboutPlanted ul {
+.blogMain aside ul {
   padding-left: 10%;
   color: #074115;
 }
-.blogMain .blogAboutPlanted ul li {
+.blogMain aside ul li {
   padding-left: 10px;
   margin: 5px 0;
 }
-.blogMain .blogAboutPlanted a {
+.blogMain aside a {
   color: black;
   font-family: "Roboto", sans-serif;
 }
@@ -637,8 +641,8 @@ BLOG BODY
   width: 100px;
   height: 100px;
 }
-.blogMain .MissionCommentContainer .blogComments form input,
-.blogMain .MissionCommentContainer .blogComments form textarea {
+.blogMain form input,
+.blogMain form textarea {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   background-color: #F0EFED;
@@ -646,7 +650,7 @@ BLOG BODY
   margin-bottom: 5%;
   padding: 0 30px 20px 30px;
 }
-.blogMain .MissionCommentContainer .blogComments form fieldset {
+.blogMain form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,12 +660,12 @@ BLOG BODY
   border: none;
   width: 100%;
 }
-.blogMain .MissionCommentContainer .blogComments form fieldset input {
+.blogMain form fieldset input {
   border: none;
   border-bottom: 2px solid #0E902D;
   width: calc(50% - 30px);
 }
-.blogMain .MissionCommentContainer .blogComments form textarea {
+.blogMain form textarea {
   width: 100%;
   resize: none;
   padding-top: 30px;
@@ -699,15 +703,15 @@ CONTACT PAGE BODY
 .contactBody .contactMessage {
   width: 67%;
 }
-.contactBody .contactMessage form {
+.contactBody form {
   background-color: white;
   -webkit-box-shadow: -23px 21px 0 -5px #F8E71C;
           box-shadow: -23px 21px 0 -5px #F8E71C;
   padding: 10% 6% 5% 6%;
   margin-top: -50%;
 }
-.contactBody .contactMessage form input,
-.contactBody .contactMessage form textarea {
+.contactBody form input,
+.contactBody form textarea {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   background-color: #F0EFED;
@@ -715,7 +719,7 @@ CONTACT PAGE BODY
   margin-bottom: 5%;
   padding: 0 30px 20px 30px;
 }
-.contactBody .contactMessage form fieldset {
+.contactBody form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,18 +729,269 @@ CONTACT PAGE BODY
   border: none;
   width: 100%;
 }
-.contactBody .contactMessage form fieldset input {
+.contactBody form fieldset input {
   border: none;
   border-bottom: 2px solid #0E902D;
   width: calc(50% - 30px);
 }
-.contactBody .contactMessage form textarea {
+.contactBody form textarea {
   width: 100%;
   resize: none;
   padding-top: 30px;
   height: 250px;
 }
-.contactBody .contactMessage form input,
-.contactBody .contactMessage form textarea {
+.contactBody form input,
+.contactBody form textarea {
   background-color: white;
+}
+
+/* =========================================
+MEDIA QUERY
+============================================ */
+@media (max-width: 950px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .heroTextHome {
+    width: 50%;
+    float: right;
+    margin: 10% -3% -20% 0;
+    padding: 6% 0 15% 0;
+  }
+  .heroTextHome h1 {
+    font-size: 6rem;
+    margin-left: -60%;
+  }
+
+  .contactBody .contactMessage form {
+    margin-top: -30%;
+  }
+}
+@media (max-width: 800px) {
+  nav .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .wrapper ul {
+    display: none;
+  }
+  nav .wrapper .burger {
+    display: inline-block;
+    margin-right: 2%;
+  }
+  nav .wrapper .burger i {
+    font-size: 2.5rem;
+  }
+
+  .heroTextHome {
+    width: 65%;
+    float: none;
+    margin: 10% auto -20% auto;
+    padding: 15% 2%;
+    text-align: center;
+  }
+  .heroTextHome h1 {
+    font-size: 4rem;
+    margin-left: 0;
+    line-height: 100px;
+  }
+
+  .aboutPlanted {
+    padding: 16% 0;
+  }
+
+  .blogReads .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogReads .wrapper .textContent {
+    text-align: center;
+  }
+  .blogReads .wrapper .textContent p {
+    text-align: left;
+  }
+  .blogReads .wrapper .blog .imageContainer {
+    margin: 0 0 10% 0;
+  }
+  .blogReads .wrapper .blog:first-child {
+    margin: 0;
+  }
+  .blogReads .wrapper .blog:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 12%;
+  }
+  .blogReads .wrapper .blog:last-child .imageContainer {
+    margin-bottom: 10%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .blogReads .wrapper img {
+    -webkit-box-shadow: 0 21px 0 -5px #F8E71C;
+            box-shadow: 0 21px 0 -5px #F8E71C;
+  }
+
+  .information .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10% 6% 0 6%;
+  }
+
+  .plantedFounder .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .plantedFounder .wrapper .textContent {
+    width: 100%;
+    margin: 8% 0 0 0;
+    text-align: center;
+  }
+  .plantedFounder .wrapper .textContent p {
+    text-align: left;
+  }
+  .plantedFounder .wrapper .imageContainer {
+    margin: 0 auto;
+    width: 60%;
+    height: 60%;
+  }
+
+  .gallery .wrapper {
+    padding: 8% 0 3% 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery .wrapper .imageContainer {
+    width: 60%;
+    margin-bottom: 5%;
+  }
+
+  .blogMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .blogMain h2 {
+    text-align: center;
+  }
+  .blogMain aside {
+    width: 100%;
+    margin-top: 2%;
+  }
+  .blogMain aside .textContent {
+    padding: 4% 40px 5% 30px;
+    margin-bottom: 2%;
+  }
+  .blogMain aside .textContent h4 {
+    padding: 0 0 2% 0;
+  }
+  .blogMain aside .imageContainer {
+    display: none;
+  }
+  .blogMain .MissionCommentContainer {
+    width: 100%;
+  }
+  .blogMain .MissionCommentContainer .blogMission .imageContainer {
+    margin: 3% 0 0% 0;
+  }
+  .blogMain .MissionCommentContainer .blogMission .imageContainer img {
+    -webkit-box-shadow: 0 21px 0 -5px #F8E71C;
+            box-shadow: 0 21px 0 -5px #F8E71C;
+  }
+  .blogMain .MissionCommentContainer .textContent {
+    border: none;
+    border-bottom: 6px solid #F8E71C;
+  }
+  .blogMain .MissionCommentContainer .textContent .date {
+    font-style: italic;
+    color: #074115;
+  }
+
+  .contactBody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactBody .contactInformation {
+    width: 100%;
+  }
+  .contactBody .contactMessage {
+    width: 100%;
+  }
+  .contactBody .contactMessage form {
+    -webkit-box-shadow: 0 21px 0 -5px #F8E71C;
+            box-shadow: 0 21px 0 -5px #F8E71C;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 570px) {
+  .heroTextHome {
+    background: none;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .heroTextHome h1 {
+    font-size: 3.2rem;
+    line-height: 80px;
+  }
+
+  h2,
+h3,
+h4 {
+    padding: 10% 0;
+  }
+
+  .aboutPlanted h2 {
+    font-size: 2rem;
+  }
+
+  .MissionCommentContainer h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  .blogComments form fieldset,
+.contactMessage form fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogComments form fieldset input,
+.contactMessage form fieldset input {
+    width: 100%;
+  }
 }

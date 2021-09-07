@@ -31,17 +31,17 @@ CONTACT PAGE BODY
     .contactMessage {
         width: 67%;
 
-        form {
-            background-color: white;
-            @include formStyle(250px, $fontSecondary);
-            @include boxShadow(-23px);
-            padding: 10% 6% 5% 6%;
-            margin-top: -50%;
+    }
+    form {
+        background-color: white;
+        @include formStyle(250px, $fontSecondary);
+        @include boxShadow(-23px);
+        padding: 10% 6% 5% 6%;
+        margin-top: -50%;
 
-            input,
-            textarea {
-                background-color: white;
-            }
+        input,
+        textarea {
+            background-color: white;
         }
     }
 }

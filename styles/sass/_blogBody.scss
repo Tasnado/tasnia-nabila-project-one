@@ -12,7 +12,7 @@ BLOG BODY
         color: #074115;
     }
 
-    .blogAboutPlanted {
+    aside {
         width: 30%;
         margin-top: 8%;
 
@@ -88,10 +88,10 @@ BLOG BODY
                 }
             }
 
-            form {
-                @include formStyle(200px, $baseFont);
-            }
         }
+    }
+    form {
+        @include formStyle(200px, $baseFont);
     }
 }
 
