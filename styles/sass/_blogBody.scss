@@ -43,6 +43,10 @@ BLOG BODY
             color: black;
             font-family: $fontSecondary;
         }
+        a:hover {
+            color: #074115;
+            border-bottom: 1px solid $secondaryColor;
+        }
     }
 
     .MissionCommentContainer {
