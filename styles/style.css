@@ -983,10 +983,8 @@ MEDIA QUERY
     line-height: 80px;
   }
 
-  h2,
-h3,
-h4 {
-    padding: 10% 0;
+  .aboutPlanted .wrapper {
+    padding: 0;
   }
 
   .aboutPlanted h2 {
@@ -1003,6 +1001,15 @@ h4 {
 
   h4 {
     font-size: 1.4rem;
+  }
+
+  .plantedFounder h3 {
+    padding-top: 3%;
+  }
+
+  p {
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   .blogComments form fieldset,

@@ -221,13 +221,10 @@ MEDIA QUERY
             font-size: 3.2rem;
             line-height: 80px;
         }
-
     }
 
-    h2,
-    h3,
-    h4 {
-        padding: 10% 0;
+    .aboutPlanted .wrapper {
+        padding: 0;
     }
 
     .aboutPlanted h2 {
@@ -246,6 +243,14 @@ MEDIA QUERY
         font-size: 1.4rem;
     }
 
+    .plantedFounder h3 {
+        padding-top: 3%;
+    }
+
+    p {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
     /////// Form //////
     
     .blogComments,
