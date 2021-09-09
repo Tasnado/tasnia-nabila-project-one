@@ -117,9 +117,15 @@ main p {
     font-family: $fontSecondary;
 }
 
+.bigWrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .wrapper {
-    max-width: 1100px;
+    max-width: 1250px;
     width: 90%;
+
     margin: 0 auto;
 }
 
