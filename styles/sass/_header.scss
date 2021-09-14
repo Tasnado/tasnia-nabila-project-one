@@ -30,7 +30,7 @@ header, nav a {
 }
 
 nav .wrapper,
-nav ul {
+.navLinks {
     display: flex;
 }
 
@@ -48,11 +48,11 @@ nav {
     font-weight: 400;
 }
 
-nav ul {
+.navLinks {
     align-self: center;
 }
 
-nav li {
+.navLinks li {
     list-style: none;
     text-transform: uppercase;
     margin-left: 50px;
